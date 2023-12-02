@@ -1,0 +1,30 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a,i,len;
+
+    cin>>a;
+
+     cin.ignore();
+    string c;
+    for(i=1;i<=a;i++){
+        getline(cin,c);
+        len=0;
+        for(int l=0;c[l]!='\0';l++){
+            len++;
+        }
+        if(len>10){
+
+        cout<<(c[0]);
+        cout<<len-2;
+        cout<<c[len-1]<<endl;
+        }else{
+            cout<<c<<endl;
+
+        }
+    }
+    return 0;
+
+}
+ 
