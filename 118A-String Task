@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define optimize() ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
+#define endl '\n'
+bool low(char b){
+return(b=='a'||b=='e'||b=='i'||b=='o'||b=='u'||b=='y');
+    
+    
+}
+int main(){
+optimize();
+string s,ans;
+cin>>s;
+
+for(auto a:s){
+    char c=tolower(a);
+    if(!low(c)){
+        ans+='.';
+        ans+=c;
+    }
+}
+cout<<ans<<endl;
+
+return 0;
+}
